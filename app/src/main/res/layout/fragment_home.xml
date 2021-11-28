@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <ImageView
+        android:id="@+id/red_line_backDrop"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        android:elevation="@dimen/margin_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Card View -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/years_5"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="@dimen/margin_80"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="@dimen/margin_160"
+        app:cardElevation="@dimen/margin_15"
+        app:layout_constraintEnd_toEndOf="@+id/red_line_backDrop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/secondaryColor"
+        android:layout_marginTop="@dimen/margin_40">
+
+        <TextView
+            android:text="5"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="center|top"
+            android:textSize="@dimen/text_25sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/years_old"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="bottom|center"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/years_12"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="@dimen/margin_80"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="@dimen/margin_160"
+        app:cardElevation="@dimen/margin_15"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:backgroundTint="@color/secondaryColor"
+        app:layout_constraintStart_toEndOf="@id/years_5"
+        app:layout_constraintTop_toBottomOf="@id/years_5"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:text="12"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="center|top"
+            android:textSize="@dimen/text_25sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/years_old"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="bottom|center"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/years_17"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="@dimen/margin_80"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="@dimen/margin_160"
+        app:cardElevation="@dimen/margin_15"
+        app:layout_constraintEnd_toEndOf="@+id/red_line_backDrop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/years_12"
+        android:backgroundTint="@color/secondaryColor"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:text="17"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="center|top"
+            android:textSize="@dimen/text_25sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/years_old"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="bottom|center"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/years_20"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="@dimen/margin_80"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="@dimen/margin_160"
+        app:cardElevation="@dimen/margin_15"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/years_5"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:backgroundTint="@color/secondaryColor"
+        app:layout_constraintTop_toBottomOf="@id/years_17"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:text="20"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="center|top"
+            android:textSize="@dimen/text_25sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/years_old"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="bottom|center"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/years_22"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="@dimen/margin_80"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="@dimen/margin_160"
+        app:cardElevation="@dimen/margin_15"
+        app:layout_constraintEnd_toEndOf="@+id/red_line_backDrop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/years_20"
+        android:backgroundTint="@color/secondaryColor"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:text="22"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="center|top"
+            android:textSize="@dimen/text_25sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/years_old"
+            android:layout_margin="@dimen/margin_15"
+            android:layout_gravity="bottom|center"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/home_hello_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Hello there !"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="@dimen/text_20sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_title"
+        app:layout_constraintEnd_toEndOf="@+id/main_title"
+        app:layout_constraintStart_toStartOf="@+id/main_title" />
+
+    <in.codeshuffle.typewriterview.TypeWriterView
+        android:id="@+id/main_title"
+        android:layout_width="@dimen/margin_200"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/red_line_backDrop"
+        app:layout_constraintTop_toBottomOf="@id/years_5"
+        app:layout_constraintBottom_toTopOf="@id/years_17"
+        />
+
+    <TextView
+        android:id="@+id/proceed_intro_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:fontFamily="@font/poppins_regular"
+        android:text=""
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="@dimen/text_10sp"
+        android:layout_marginTop="@dimen/text_8sp"
+        app:layout_constraintEnd_toEndOf="@+id/main_title"
+        app:layout_constraintStart_toStartOf="@+id/main_title"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <TextView
+        android:id="@+id/intro_subTitle"
+        android:layout_width="@dimen/margin_200"
+        android:layout_height="wrap_content"
+        android:text="@string/expect_adventure"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="@dimen/text_12sp"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/red_line_backDrop"
+        app:layout_constraintTop_toBottomOf="@id/years_17"
+        app:layout_constraintBottom_toTopOf="@id/years_22"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="170dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="370dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_traveler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/intro_subTitle"
+        app:layout_constraintStart_toStartOf="@+id/intro_subTitle"
+        app:layout_constraintTop_toTopOf="@+id/intro_subTitle"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/traveler" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

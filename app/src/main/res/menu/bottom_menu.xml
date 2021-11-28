@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        android:enabled="true"
+        app:cnb_iconColor="@color/purple_700"
+        app:cnb_textColor="@color/purple_700"
+        />
+
+    <item
+        android:id="@+id/randomFragment"
+        android:icon="@drawable/ic_game"
+        android:title="@string/fun_activity"
+        app:cnb_iconColor="@color/teal_700"
+        app:cnb_textColor="@color/teal_700"/>
+
+    <item
+        android:id="@+id/summaryFragment"
+        android:icon="@drawable/ic_sticky_note"
+        android:title="@string/summary"
+        app:cnb_iconColor="@color/primaryColor"
+        app:cnb_textColor="@color/primaryColor"/>
+
+    <item
+        android:id="@+id/infoFragment"
+        android:icon="@drawable/ic_info"
+        android:title="@string/info"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"/>
+
+</menu>

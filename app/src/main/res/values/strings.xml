@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MyInfo</string>
+    <string name="api_key">epnrjcs2y4rs</string>
+
+    <!--  Fragment related  -->
+    <string name="home">Home</string>
+    <string name="fun_activity">Random</string>
+    <string name="summary">Summary</string>
+    <string name="info">Info</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="years_old">years old</string>
+    <string name="little_story">Wanna hear a little story,</string>
+    <string name="please_introduce">Please introduce yourself, adventurer XXX.</string>
+    <string name="expect_adventure">Do expect some adventures by the time this story comes to an end </string>
+    <string name="never_show_again">Never show again</string>
+    <string name="proceed_to_introduction"><u>Proceed to introduction</u></string>
+    <string name="change_name"><u>Change my details</u></string>
+    <string name="author_name">Prasanth Manimaran</string>
+    <string name="motto"><i><b>"We do not have to know what tomorrow holds"</b></i></string>
+    <string name="insta">www.instagram.com/prasanthmaran_/</string>
+    <string name="paypal">prasmaran9999@gmail.com</string>
+    <string name="location">Selangor</string>
+    <string name="chat_with_me">Chat with me</string>
+    <string name="send_feedback">Feedback</string>
+    <string name="reset_setting">Reset your details</string>
+
+    <!-- Stream Chat Strings -->
+    <string name="username">Username</string>
+    <string name="go">GO</string>
+    <string name="chat_app">Chat App</string>
+    <string name="reliable_and_fast">Reliable and Fast</string>
+    <string name="first_name">First Name</string>
+    <string name="search">Search</string>
+    <string name="log_out">Log Out</string>
+    <string name="settings">Settings</string>
+    <string name="groups">Groups</string>
+    <string name="channels">Channels</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+</resources>

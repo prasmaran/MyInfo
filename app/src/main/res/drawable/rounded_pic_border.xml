@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke
+        android:width="@dimen/margin_2"
+        android:color="@color/secondaryColor" />
+
+    <solid android:color="@color/secondaryColor" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/margin_100"
+        android:bottomRightRadius="@dimen/margin_100"
+        android:topLeftRadius="@dimen/margin_100"
+        android:topRightRadius="@dimen/margin_100" />
+</shape>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="HardcodedText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_5"
+    android:elevation="@dimen/margin_5"
+    android:background="@drawable/rounded_bg_border">
+
+    <Button
+        android:id="@+id/feedback_closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_0"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/ic_close_button"
+        android:drawableTint="@color/secondaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/intro_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:text="Intro please 🥴"
+        android:textColor="@color/secondaryColor"
+        android:textSize="@dimen/text_18sp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedback_closeBtn" />
+
+    <LinearLayout
+        android:id="@+id/patient_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_15"
+        android:paddingRight="@dimen/margin_15"
+        app:layout_constraintTop_toBottomOf="@id/intro_header"
+        android:orientation="vertical">
+<!--        <View-->
+<!--            android:id="@+id/separator1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@color/primaryLightColor"-->
+<!--            tools:ignore="MissingConstraints" />-->
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_5"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        app:startIconDrawable="@drawable/ic_user"
+        app:startIconTint="@color/secondaryColor"
+        android:textColorHint="@color/secondaryColor"
+        app:hintTextColor="@color/secondaryColor"
+        app:boxStrokeColor="@color/secondaryColor"
+        app:boxStrokeErrorColor="@color/secondaryColor"
+        app:errorIconTint="@color/secondaryColor"
+        app:errorTextColor="@color/secondaryColor"
+        app:layout_constraintTop_toBottomOf="@id/patient_detail_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Your name, adventurer?">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/intro_name_et"
+            android:textColor="@color/secondaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ageLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        app:startIconDrawable="@drawable/ic_age"
+        app:startIconTint="@color/secondaryColor"
+        android:textColorHint="@color/secondaryColor"
+        app:hintTextColor="@color/secondaryColor"
+        app:boxStrokeColor="@color/secondaryColor"
+        app:boxStrokeErrorColor="@color/secondaryColor"
+        app:errorIconTint="@color/secondaryColor"
+        app:errorTextColor="@color/secondaryColor"
+        app:layout_constraintTop_toBottomOf="@id/nameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="How old are you, adventurer?">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/intro_age_et"
+            android:inputType="number"
+            android:textColor="@color/secondaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_feedback_btn"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeWidth="@dimen/margin_1"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/secondaryColor"
+        android:text="Send details"
+        app:cornerRadius="@dimen/margin_5"
+        android:textColor="@color/primaryColor"
+        android:layout_height="@dimen/margin_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_5"
+        app:layout_constraintBottom_toTopOf="@id/never_show_again_tv"
+        app:layout_constraintTop_toBottomOf="@id/ageLayout"/>
+
+    <CheckBox
+        android:id="@+id/never_show_again_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/never_show_again"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text_11sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit_feedback_btn"
+        app:layout_constraintEnd_toEndOf="@+id/submit_feedback_btn"
+        app:layout_constraintStart_toStartOf="@+id/submit_feedback_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

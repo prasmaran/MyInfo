@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+
+    <!-- for general usage -->
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+
+
+    <!-- For padding purposes -->
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_160">160dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+
+    <!-- for text sizes   -->
+    <dimen name="text_8sp">8sp</dimen>
+    <dimen name="text_10sp">10sp</dimen>
+    <dimen name="text_11sp">11sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_25sp">25sp</dimen>
+    <dimen name="text_30sp">30sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+
+
+</resources>

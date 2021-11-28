@@ -1,0 +1,138 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+
+}
+
+android {
+    compileSdk 31 //changed from 30
+
+    defaultConfig {
+        applicationId "com.example.myinfo"
+        minSdk 23
+        targetSdk 31 //changed from 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Custom Bottom Navigation Bar
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.8'
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.3.4'
+
+    // Newly added for startActivityForResult
+    implementation("androidx.fragment:fragment-ktx:1.3.6")
+    implementation("androidx.activity:activity-ktx:1.4.0")
+
+    // Coordinator Layout
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+
+    // Navigation Component
+    //implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    //implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+    def nav_version = "2.4.0-alpha02"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Room components
+    implementation "androidx.room:room-runtime:2.3.0"
+    kapt "androidx.room:room-compiler:2.3.0"
+    implementation "androidx.room:room-ktx:2.3.0"
+    androidTestImplementation "androidx.room:room-testing:2.3.0"
+
+    // Data binding
+    kapt "com.android.databinding:compiler:3.2.0-alpha10"
+    kapt "androidx.databinding:databinding-common:4.2.1"
+
+    // DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+
+    // Recyclerview 1.2.0 --> 1.2.1
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
+
+    // Lifecycle
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
+
+    // Swiper refresh layout
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    // Image Loading library Coil
+    implementation "io.coil-kt:coil:1.1.1"
+
+    // Lottie
+    implementation 'com.airbnb.android:lottie:4.1.0'
+    implementation 'in.codeshuffle:typewriterview:1.1.0'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.todkars:shimmer-recyclerview:0.4.1'
+
+    // Jsoup
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+    // rating bar
+    implementation 'com.github.sujithkanna:smileyrating:1.6.8'
+
+    // PDF generator
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation("com.pspdfkit:pspdfkit:8.0.1")
+
+    // Stream Chat
+    implementation "io.getstream:stream-chat-android-ui-components:4.13.0"
+
+
+
+
+
+
+
+}

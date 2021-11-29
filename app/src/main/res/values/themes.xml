@@ -27,6 +27,11 @@
         <!-- Can call the main style here -->
     </style>
 
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.Outlined" parent="">
+        <item name="colorPrimary">@color/secondaryColor</item>
+        <item name="colorControlActivated">@color/secondaryColor</item>
+    </style>
+
     <!-- Testing Mode -->
 
     <!-- TextInputLayout floating label -->

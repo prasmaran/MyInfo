@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".ui.fragment.LoginFragment">
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/chat_app"
+        android:textColor="@color/secondaryColor"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/reliable_and_fast"
+        android:textColor="@color/secondaryColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/title_textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/title_textView"
+        app:layout_constraintTop_toBottomOf="@+id/title_textView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstName_inputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/first_name"
+        android:textColorHint="@color/secondaryColor"
+        app:boxStrokeColor="@color/secondaryColor"
+        app:boxStrokeErrorColor="@color/secondaryColor"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterTextColor="@color/secondaryColor"
+        app:errorIconTint="@color/secondaryColor"
+        app:errorTextColor="@color/secondaryColor"
+        app:hintTextColor="@color/secondaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_textView"
+        app:startIconDrawable="@drawable/ic_user"
+        app:startIconTint="@color/secondaryColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstName_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:textColor="@color/secondaryColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_inputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/username"
+        android:textColorHint="@color/secondaryColor"
+        app:boxStrokeColor="@color/secondaryColor"
+        app:boxStrokeErrorColor="@color/secondaryColor"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterTextColor="@color/secondaryColor"
+        app:errorIconTint="@color/secondaryColor"
+        app:errorTextColor="@color/secondaryColor"
+        app:hintTextColor="@color/secondaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstName_inputLayout"
+        app:startIconDrawable="@drawable/ic_user"
+        app:startIconTint="@color/secondaryColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:textColor="@color/secondaryColor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_50"
+        android:layout_marginTop="@dimen/margin_10"
+        android:backgroundTint="@color/secondaryColor"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/go"
+        android:textColor="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="@+id/username_inputLayout"
+        app:layout_constraintStart_toStartOf="@+id/username_inputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/username_inputLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
